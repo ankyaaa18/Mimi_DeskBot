@@ -150,7 +150,7 @@ Mimi_DeskBot/
 
 # Roadmap
 
-## Version 1.0
+## Version 1.0.0
 
 -  OLED facial expressions
 -  Wi-Fi control
