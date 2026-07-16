@@ -148,21 +148,20 @@ Mimi_DeskBot/
 ---
 
 
-# 🛣 Roadmap
+# Roadmap
 
 ## Version 1.0
 
-- [x] OLED facial expressions
-- [x] Wi-Fi control
-- [x] Explore mode
-- [x] Differential drive
+-  OLED facial expressions
+-  Wi-Fi control
+-  Differential drive
 
 ## Planned Features
 
 - [ ] PC Stat Monitor Mode
 - [ ] Battery Percentage Display
 - [ ] Voice Interaction
-- [ ] More Facial Expressions
+- [ ] Better Facial Animations
 - [ ] OTA Firmware Updates
 - [ ] AI Assistant Integration
 - [ ] Mobile App
@@ -170,12 +169,12 @@ Mimi_DeskBot/
 ---
 
 
-# 📜 License
+# License
 
 This project is licensed under the MIT License.
 
 ---
 
-# ⭐ Support
+# Support
 
 If you enjoyed this project, consider leaving a ⭐ on the repository.
