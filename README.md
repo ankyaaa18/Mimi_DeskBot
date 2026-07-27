@@ -161,7 +161,7 @@ Mimi_DeskBot/
 - [ ] PC Stat Monitor Mode
 - [ ] Battery Percentage Display
 - [ ] Voice Interaction
-- [ ] Better Facial Animations
+- [x] Better Facial Animations
 - [ ] OTA Firmware Updates
 - [ ] AI Assistant Integration
 - [ ] Mobile App
