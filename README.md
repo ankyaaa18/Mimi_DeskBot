@@ -158,6 +158,7 @@ Mimi_DeskBot/
 
 ## Planned Features
 
+- [ ] Real-time Clock and Weather Monitoring
 - [ ] PC Stat Monitor Mode
 - [ ] Battery Percentage Display
 - [ ] Voice Interaction
