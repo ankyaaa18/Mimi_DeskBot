@@ -138,7 +138,7 @@ Mimi_DeskBot/
 │
 ├── images/             *Images
 │ 
-├── docs/               
+├── docs/               *Setup Guide
 │
 │
 ├── README.md           *description
