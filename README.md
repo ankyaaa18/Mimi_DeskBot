@@ -156,11 +156,14 @@ Mimi_DeskBot/
 -  Wi-Fi control
 -  Differential drive
 
+## Version 1.1.0
+
+- Motion Aware Better facial expressions
+
 ## Planned Features
 
 - [ ] Real-time Clock and Weather Monitoring
 - [ ] PC Stat Monitor Mode
-- [ ] Battery Percentage Display
 - [ ] Voice Interaction
 - [x] Better Facial Animations
 - [ ] OTA Firmware Updates
