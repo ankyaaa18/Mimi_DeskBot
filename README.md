@@ -112,6 +112,7 @@ lib_deps =
 2. Connect to WiFi
 3. Access Web Interface -> https://mimi.local
 4. Controls Web Interface
+
 ![Controls](images/Controls.png)
 
 # Project Structure
