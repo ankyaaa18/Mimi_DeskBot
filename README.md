@@ -1,5 +1,5 @@
 # Mimi - Desktop Buddy
-An expressive ESP32-powered desktop robot with OLED facial animations, Wi-Fi control, and autonomous exploration.
+An expressive ESP32-powered desktop robot with OLED facial animations, Real-time Clock and Weather monitoring, Wi-Fi control, and autonomous exploration.
 
 ---
 
@@ -11,6 +11,7 @@ This ESP32-powered robot is designed to create personality using animated OLED e
 - Autonomous Explore mode
 - Battery powered
 - Modular firmware architecture
+- Real-time Clock and Weather monitoring
 
 ---
 
@@ -27,12 +28,13 @@ This ESP32-powered robot is designed to create personality using animated OLED e
 | Battery Pack | 2S 18650 Li-ion (7.4V) | 1 | Primary rechargeable power source for the robot. |
 | Buck Converter | LM2596 Adjustable DC-DC Converter | 1 | Steps down the battery voltage to a stable supply for the electronics. |
 | Power Switch | SPDT Slide Switch | 1 | Safely turns the robot on and off. |
+| Mode Switch | Push Bitton | 1 | Changes mode between facial and clock/weather|
 
 ---
 
 ## Hardware Connections
 
-
+```
                     ┌──────────────────────────┐
                     │    2S Li-ion Battery     │
                     │           7.4V           │
@@ -56,7 +58,7 @@ This ESP32-powered robot is designed to create personality using animated OLED e
                     │  GPIO 26  │  --->   IN2      OUT2  ---> Motor1 │
                     │  GPIO 27  │  --->   IN1      OUT3  ---> Motor1 │
                     │  GPIO 14  │  --->   IN2      OUT4  ---> Motor1 │
-                    │           │────────────────────────────────────┘
+   Push Button <────│─ GPIO 4   │────────────────────────────────────┘
                     │           │───────────────────┐                   
                     │  GPIO 21  │  --->  OLED (SCA) │
                     │  GPIO 22  │  --->  OLED (SDA) │
@@ -64,6 +66,7 @@ This ESP32-powered robot is designed to create personality using animated OLED e
                     │  3V3      │  --->  OLED VCC   │
                     └───────────┘───────────────────┘
 
+```
 ## Software
 
 - **Expressive OLED Face:** Animated facial expressions including neutral, happy, blink, wink, and other interactive emotions.
@@ -91,6 +94,7 @@ This ESP32-powered robot is designed to create personality using animated OLED e
     Go to **Sketch** -> **Include Library** -> **Manage Libraries** -> **Search and Install** :
    - `Adafruit GFX Library`
    - `Adafruit SSD1306`
+   - `ArduinoJson`
 
 ### PlatformIO Setup :
 ```ini
@@ -106,21 +110,8 @@ lib_deps =
 
 1. Upload the code using Arduino IDE (Select correct Board and COM Port) or PlatformIO.
 2. Connect to WiFi
-3. Access Web Interface -> Open browser to *192.168.4.1*
-4. Controls :
+3. Access Web Interface -> https://mimi.local
 
-| Button | Action |
-|---------|--------|
-| Forward | Move Forward |
-| Reverse | Move Backward |
-| Left | Turn Left |
-| Right | Turn Right |
-| Stop | Stop Motors |
-| Spin CW | Rotate Clockwise |
-| Spin CCW | Rotate Counter Clockwise |
-| Explore | Autonomous Movement |
-| Blink | Blink Animation |
-| Wink | Wink Animation |
 
 # Project Structure
 
@@ -135,6 +126,8 @@ Mimi_DeskBot/
 │   ├── motor.h
 │   └── movement.cpp
 │   └── movement.h
+│   └── clock_weather.h
+│   └── clock_weather.cpp
 │
 ├── images/             *Images
 │ 
@@ -162,7 +155,7 @@ Mimi_DeskBot/
 
 ## Planned Features
 
-- [ ] Real-time Clock and Weather Monitoring
+- [x] Real-time Clock and Weather Monitoring
 - [ ] PC Stat Monitor Mode
 - [ ] Voice Interaction
 - [x] Better Facial Animations
