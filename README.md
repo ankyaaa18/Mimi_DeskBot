@@ -155,6 +155,10 @@ Mimi_DeskBot/
 
 - Motion Aware Better facial expressions
 
+## Version 2.0.0
+
+- Time & Weather
+- Toggle between face and Time/Weather
 ## Planned Features
 
 - [x] Real-time Clock and Weather Monitoring
