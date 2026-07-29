@@ -8,8 +8,8 @@
 #include <ESPmDNS.h>
 
 // ---------- WiFi (station mode) ----------
-const char* ssid     = "D.K.Home";
-const char* password = "9867846319";
+const char* ssid     = "WiFi SSD";
+const char* password = "PASSWORD";
 
 // ---------- Mode button ----------
 const int MODE_BUTTON_PIN = 4;          // change if you prefer another free GPIO
@@ -21,7 +21,7 @@ DisplayMode currentMode = MODE_FACE;
 bool lastButtonState = HIGH;
 unsigned long lastDebounceTime = 0;
 
-// ---------- Web server (same UI as before) ----------
+
 WebServer server(80);
 
 const char webpage[] = R"rawliteral(
@@ -168,7 +168,7 @@ ping();
 </html>
 )rawliteral";
 
-// ---------- Handlers (same as before + a couple of extras) ----------
+
 void handleRoot() {
   String page = webpage;
   server.send(200, "text/html", page);
