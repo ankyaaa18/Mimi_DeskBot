@@ -111,7 +111,8 @@ lib_deps =
 1. Upload the code using Arduino IDE (Select correct Board and COM Port) or PlatformIO.
 2. Connect to WiFi
 3. Access Web Interface -> https://mimi.local
-
+4. Controls Web Interface
+![Controls](images/Controls.png)
 
 # Project Structure
 
