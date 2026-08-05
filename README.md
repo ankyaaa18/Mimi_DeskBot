@@ -90,10 +90,14 @@ This ESP32-powered robot is designed to create personality using animated OLED e
   - `WiFi` (Built-in with ESP32)
   - `WebServer` (Built-in with ESP32)
   - `Wire` (Built-in)
+  - `ESPmDNS`
+  - `ArduinoOTA`
+  - `HTTPClient`
+  - `math`
 
     Go to **Sketch** -> **Include Library** -> **Manage Libraries** -> **Search and Install** :
    - `Adafruit GFX Library`
-   - `Adafruit SSD1306`
+   - `Adafruit SH1106G`
    - `ArduinoJson`
 
 ### PlatformIO Setup :
