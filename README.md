@@ -159,13 +159,18 @@ Mimi_DeskBot/
 
 - Time & Weather
 - Toggle between face and Time/Weather
+
+## Version 2.1.0
+
+- OTA Firmware Update
+
 ## Planned Features
 
 - [x] Real-time Clock and Weather Monitoring
 - [ ] PC Stat Monitor Mode
 - [ ] Voice Interaction
 - [x] Better Facial Animations
-- [ ] OTA Firmware Updates
+- [x] OTA Firmware Updates
 - [ ] AI Assistant Integration
 - [ ] Mobile App
 
