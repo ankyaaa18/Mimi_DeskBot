@@ -6,10 +6,15 @@
   - `WiFi` (Built-in with ESP32)
   - `WebServer` (Built-in with ESP32)
   - `Wire` (Built-in)
+  - `ESPmDNS`
+  - `ArduinoOTA`
+  - `HTTPClient`
+  - `math`
 
     Go to **Sketch** -> **Include Library** -> **Manage Libraries** -> **Search and Install** :
    - `Adafruit GFX Library`
-   - `Adafruit SSD1306`
+   - `Adafruit SH1106G`
+   - `ArduinoJson`
 
 ### PlatformIO Setup :
 ```ini
@@ -23,20 +28,11 @@ lib_deps =
     adafruit/Adafruit GFX Library
 ```
 
+
 1. Upload the code using Arduino IDE (Select correct Board and COM Port) or PlatformIO.
 2. Connect to WiFi
-3. Access Web Interface -> Open browser to *192.168.4.1*
+3. Access Web Interface -> https://mimi.local
 4. Controls :
 
-| Button | Action |
-|---------|--------|
-| Forward | Move Forward |
-| Reverse | Move Backward |
-| Left | Turn Left |
-| Right | Turn Right |
-| Stop | Stop Motors |
-| Spin CW | Rotate Clockwise |
-| Spin CCW | Rotate Counter Clockwise |
-| Explore | Autonomous Movement |
-| Blink | Blink Animation |
-| Wink | Wink Animation |
+ ![Controls](images/Controls.png)
+
